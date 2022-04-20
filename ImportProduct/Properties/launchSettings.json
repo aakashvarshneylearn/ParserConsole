@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImportProduct": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Downloads\\TakeHomeAssignment\\software_engineer\\coding\\feed-products"
+    }
+  }
+}
