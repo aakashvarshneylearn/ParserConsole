@@ -1,16 +1,16 @@
 ﻿using Newtonsoft.Json;
 using ParserLib.Exceptions;
 using ParserLib.Model;
-using ParserLib.Services.Parsers;
+using ParserLib.Parsers;
 
 namespace ParserLib.Implementation.Services.Parsers;
 
 internal class ParseSoftwareadvice : IParser
 {
     private readonly IFileReader _fileReader;
-    internal ParseSoftwareadvice(IFileReader fileReader)
+    public ParseSoftwareadvice(IFileReader fileReader)
     {
-        _fileReader = fileReader;
+        _fileReader = fileReader ?? throw new ArgumentNullException(nameof(fileReader));
     }
     public List<Product> ParseRawData(string filePath)
     {

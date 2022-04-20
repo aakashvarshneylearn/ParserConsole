@@ -1,16 +1,16 @@
 ﻿using Newtonsoft.Json.Linq;
 using ParserLib.Exceptions;
 using ParserLib.Model;
-using ParserLib.Services.Parsers;
+using ParserLib.Parsers;
 
 namespace ParserLib.Implementation.Services.Parsers;
 
 internal class ParseCapterra : IParser
 {
     private readonly IFileReader _fileReader;
-    internal ParseCapterra(IFileReader fileReader)
+    public ParseCapterra(IFileReader fileReader)
     {
-        _fileReader = fileReader;
+        _fileReader = fileReader ?? throw new ArgumentNullException(nameof(fileReader));
     }
     public List<Product> ParseRawData(string filePath)
     {

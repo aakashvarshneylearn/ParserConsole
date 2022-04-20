@@ -1,15 +1,14 @@
 ﻿using ParserLib.Implementation.Services.Parsers;
-using ParserLib.Services;
-using ParserLib.Services.Parsers;
+using ParserLib.Parsers;
 
 namespace ParserLib.Implementation.Services;
 
 internal class Factory: IFactory
 {
     private  IFileReader _fileReader;
-    internal Factory(IFileReader fileReader)
+    public Factory(IFileReader fileReader)
     {
-        _fileReader = fileReader;
+        _fileReader = fileReader ?? throw new ArgumentNullException(nameof(fileReader));
     }
 
    public  IParser GetInstance(string file)

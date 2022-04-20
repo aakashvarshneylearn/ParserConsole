@@ -1,4 +1,4 @@
-﻿namespace ParserLib.Services.Parsers;
+﻿namespace ParserLib.Parsers;
 
 public interface IFileReader
 {

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ImportProduct\ImportProduct.csproj" />
+    <ProjectReference Include="..\ParserLib.Implementation\ParserLib.Implementation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,4 +13,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\ParserLib\ParserLib.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="DataProvider\Implementation\" />
+	</ItemGroup>
 </Project>

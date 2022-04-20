@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using ParserLib.Services.Parsers;
+using ParserLib.Parsers;
 using YamlDotNet.Serialization;
 
 namespace ParserLib.Implementation.Services.Parsers;

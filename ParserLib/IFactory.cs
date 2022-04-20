@@ -1,6 +1,6 @@
-﻿using ParserLib.Services.Parsers;
+﻿using ParserLib.Parsers;
 
-namespace ParserLib.Services;
+namespace ParserLib;
 
 public interface IFactory
 {
